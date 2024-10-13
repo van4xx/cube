@@ -73,7 +73,7 @@
     transform: rotateX(-90deg);
   }
   .yellow {
-    background-color: #bd83b8;
+    background-color: yellow;
   }
   .orange {
     background-color: orange;
@@ -82,7 +82,7 @@
     background-color: #4b0082;
   }
   .red {
-    background-color: red;
+    background-color: #bd83b8;
   }
   .green {
     background-color: #f1916d;
