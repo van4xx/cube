@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+  .scene {
+    width: 12rem;
+    height: 12rem;
+    margin: 4rem auto;
+    perspective: 600px;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform:translateZ(-6rem) rotateX(-25deg) rotateY(-45deg);
+  }
+  .cube {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: grid;
+  }
+  .cube.x {
+
+  }
+  .cube.y {
+    transform: rotateZ(90deg);
+  }
+  .cube.z {
+    transform: rotateY(90deg);
+  }
+  .slice {
+    width:100%;
+    height:100%;
+    position: relative;
+    transform-style: preserve-3d;
+  }
+  .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    display: grid;
+    gap: 0.25rem;
+    padding: 0.125rem;
+  }
+  .face:nth-child(1) {
+    transform: rotateX(90deg) translateZ(6rem);
+  }
+  .face:nth-child(2) {
+    transform: rotateY(-90deg) translateZ(6rem);
+  }
+  .face:nth-child(3) {
+    transform: translateZ(6rem);
+  }
+  .face:nth-child(5) {
+    transform: rotateY(180deg) translateZ(6rem);
+  }
+  .face:nth-child(6) {
+    transform: rotateX(-90deg) translateZ(6rem);
+  }
+  .rotate-start {
+    transition: all 600ms linear;
+  }
+  .rotate-1 {
+    transform: rotateX(90deg);
+  }
+  .rotate-2 {
+    transform: rotateX(180deg);
+  }
+  .rotate-3 {
+    transform: rotateX(-90deg);
+  }
+  .yellow {
+    background-color: #bd83b8;
+  }
+  .orange {
+    background-color: orange;
+  }
+  .blue {
+    background-color: #4b0082;
+  }
+  .red {
+    background-color: red;
+  }
+  .green {
+    background-color: #f1916d;
+  }
+  .white {
+    background-color: #ffffff;
+  }
